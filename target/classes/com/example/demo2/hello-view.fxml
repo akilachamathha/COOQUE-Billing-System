@@ -12,15 +12,15 @@
    <children>
       <AnchorPane layoutX="45.900001525878906" layoutY="46.900001525878906">
          <children>
-            <Button layoutX="4.099998474121094" layoutY="3.0999984741210938" mnemonicParsing="false" onAction="#onHelloButtonClick" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 10px;" text="Button" />
-            <Button fx:id="bVanila" layoutX="164.0999984741211" layoutY="3.0999984741210938" mnemonicParsing="false" onAction="#onHelloButtonClick" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 10;" text="Button" />
-            <Button layoutX="324.0999984741211" layoutY="3.0999984741210938" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 10;" text="Button" />
-            <Button layoutX="484.0999984741211" layoutY="3.0999984741210938" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 10;" text="Button" />
-            <Button layoutX="4.099998474121094" layoutY="163.0999984741211" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 10;" text="Button" />
-            <Button layoutX="164.0999984741211" layoutY="163.0999984741211" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 10;" text="Button" />
-            <Button layoutX="324.0999984741211" layoutY="163.0999984741211" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 10;" text="Button" />
+            <Button layoutX="4.099998474121094" layoutY="3.0999984741210938" mnemonicParsing="false" onAction="#ButtonVanila" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 10px;" text="Button" />
+            <Button fx:id="bVanila" layoutX="164.0999984741211" layoutY="3.0999984741210938" mnemonicParsing="false" onAction="#ButtonChocolate" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 10;" text="Button" />
+            <Button layoutX="324.0999984741211" layoutY="3.0999984741210938" mnemonicParsing="false" onAction="#ButtonFruitNut" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 10;" text="Button" />
+            <Button layoutX="484.0999984741211" layoutY="3.0999984741210938" mnemonicParsing="false" onAction="#ButtonMango" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 10;" text="Button" />
+            <Button layoutX="4.099998474121094" layoutY="163.0999984741211" mnemonicParsing="false" onAction="#ButtonVeryBerry" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 10;" text="Button" />
+            <Button layoutX="164.0999984741211" layoutY="163.0999984741211" mnemonicParsing="false" onAction="#ButtonRockeyRoad" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 10;" text="Button" />
+            <Button layoutX="324.0999984741211" layoutY="163.0999984741211" mnemonicParsing="false" onAction="#ButtonCookieCream" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 10;" text="Button" />
             <Button layoutX="4.099998474121094" layoutY="323.0999984741211" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 10;" text="Button" />
-            <Button layoutX="484.0999984741211" layoutY="163.0999984741211" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 10;" text="Button" />
+            <Button layoutX="484.0999984741211" layoutY="163.0999984741211" mnemonicParsing="false" onAction="#ButtonMango" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 10;" text="Button" />
             <Button layoutX="484.0999984741211" layoutY="323.0999984741211" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 10;" text="Button" />
             <Button layoutX="164.0999984741211" layoutY="323.0999984741211" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 10;" text="Button" />
             <Button layoutX="324.0999984741211" layoutY="323.0999984741211" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 10;" text="Button" />
@@ -39,62 +39,62 @@
         </columns>
       </TableView>
 
-      <Button layoutX="1074.0" layoutY="70.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" style="-fx-background-radius: 10;" text="9" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+      <Button layoutX="1074.0" layoutY="70.0" mnemonicParsing="false" onAction="#no9" prefHeight="80.0" prefWidth="80.0" style="-fx-background-radius: 10;" text="9" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
          <font>
             <Font size="40.0" />
          </font>
       </Button>
-      <Button layoutX="1198.0" layoutY="110.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" style="-fx-background-radius: 10;" text="8" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="50.0">
+      <Button layoutX="1198.0" layoutY="110.0" mnemonicParsing="false" onAction="#no8" prefHeight="80.0" prefWidth="80.0" style="-fx-background-radius: 10;" text="8" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="50.0">
          <font>
             <Font size="40.0" />
          </font>
       </Button>
-      <Button layoutX="1310.0" layoutY="117.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" style="-fx-background-radius: 10;" text="7" AnchorPane.rightAnchor="230.0" AnchorPane.topAnchor="50.0">
+      <Button layoutX="1310.0" layoutY="117.0" mnemonicParsing="false" onAction="#no7" prefHeight="80.0" prefWidth="80.0" style="-fx-background-radius: 10;" text="7" AnchorPane.rightAnchor="230.0" AnchorPane.topAnchor="50.0">
          <font>
             <Font size="40.0" />
          </font>
       </Button>
-      <Button layoutX="1078.0" layoutY="160.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" style="-fx-background-radius: 10;" text="4" AnchorPane.rightAnchor="230.0" AnchorPane.topAnchor="140.0">
+      <Button layoutX="1078.0" layoutY="160.0" mnemonicParsing="false" onAction="#no4" prefHeight="80.0" prefWidth="80.0" style="-fx-background-radius: 10;" text="4" AnchorPane.rightAnchor="230.0" AnchorPane.topAnchor="140.0">
          <font>
             <Font size="40.0" />
          </font>
       </Button>
-      <Button layoutX="1208.0" layoutY="120.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" style="-fx-background-radius: 10;" text="5" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="140.0">
+      <Button layoutX="1208.0" layoutY="120.0" mnemonicParsing="false" onAction="#no5" prefHeight="80.0" prefWidth="80.0" style="-fx-background-radius: 10;" text="5" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="140.0">
          <font>
             <Font size="40.0" />
          </font>
       </Button>
-      <Button layoutX="1298.0" layoutY="173.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" style="-fx-background-radius: 10;" text="6" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="140.0">
+      <Button layoutX="1298.0" layoutY="173.0" mnemonicParsing="false" onAction="#no6" prefHeight="80.0" prefWidth="80.0" style="-fx-background-radius: 10;" text="6" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="140.0">
          <font>
             <Font size="40.0" />
          </font>
       </Button>
-      <Button layoutX="1078.0" layoutY="260.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" style="-fx-background-radius: 10;" text="1" AnchorPane.rightAnchor="230.0" AnchorPane.topAnchor="230.0">
+      <Button layoutX="1078.0" layoutY="260.0" mnemonicParsing="false" onAction="#no1" prefHeight="80.0" prefWidth="80.0" style="-fx-background-radius: 10;" text="1" AnchorPane.rightAnchor="230.0" AnchorPane.topAnchor="230.0">
          <font>
             <Font size="40.0" />
          </font>
       </Button>
-      <Button layoutX="1218.0" layoutY="130.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" style="-fx-background-radius: 10;" text="2" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="230.0">
+      <Button layoutX="1218.0" layoutY="130.0" mnemonicParsing="false" onAction="#no2" prefHeight="80.0" prefWidth="80.0" style="-fx-background-radius: 10;" text="2" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="230.0">
          <font>
             <Font size="40.0" />
          </font>
       </Button>
-      <Button layoutX="1306.0" layoutY="270.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" style="-fx-background-radius: 10;" text="3" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="230.0">
+      <Button layoutX="1306.0" layoutY="270.0" mnemonicParsing="false" onAction="#no3" prefHeight="80.0" prefWidth="80.0" style="-fx-background-radius: 10;" text="3" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="230.0">
          <font>
             <Font size="40.0" />
          </font>
       </Button>
-      <Button layoutX="1078.0" layoutY="388.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" style="-fx-background-radius: 10;" text="C" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="320.0">
+      <Button layoutX="1078.0" layoutY="388.0" mnemonicParsing="false" onAction="#clear" prefHeight="80.0" prefWidth="80.0" style="-fx-background-radius: 10;" text="C" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="320.0">
          <font>
             <Font size="40.0" />
          </font>
       </Button>
-      <Button layoutX="1088.0" layoutY="398.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" style="-fx-background-radius: 10;" text="0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="320.0">
+      <Button layoutX="1088.0" layoutY="398.0" mnemonicParsing="false" onAction="#no0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-radius: 10;" text="0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="320.0">
          <font>
             <Font size="40.0" />
          </font>
       </Button>
-      <Button layoutX="1065.0" layoutY="395.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" style="-fx-background-radius: 10;" text="." AnchorPane.rightAnchor="230.0" AnchorPane.topAnchor="320.0">
+      <Button layoutX="1065.0" layoutY="395.0" mnemonicParsing="false" onAction="#dot" prefHeight="80.0" prefWidth="80.0" style="-fx-background-radius: 10;" text="." AnchorPane.rightAnchor="230.0" AnchorPane.topAnchor="320.0">
          <font>
             <Font size="40.0" />
          </font>
@@ -122,7 +122,7 @@
          <font>
             <Font size="20.0" />
          </font></TextField>
-      <TextField editable="false" layoutX="1282.0" layoutY="481.0" prefHeight="46.0" prefWidth="130.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="550.0">
+      <TextField fx:id="tfBalance" editable="false" layoutX="1282.0" layoutY="481.0" prefHeight="46.0" prefWidth="130.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="550.0">
          <font>
             <Font size="20.0" />
          </font></TextField>
