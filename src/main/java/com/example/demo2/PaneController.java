@@ -8,13 +8,13 @@ package com.example.demo2;
         import javafx.scene.control.TableView;
         import javafx.scene.control.TextField;
         import javafx.scene.control.cell.PropertyValueFactory;
+        import javafx.scene.layout.AnchorPane;
 
         import java.net.URL;
         import java.util.List;
         import java.util.ResourceBundle;
 
 public class PaneController implements Initializable {
-
     //.........TableView....................................................
     @FXML
     private TableView<Item> table;
@@ -30,10 +30,10 @@ public class PaneController implements Initializable {
         tcItem.setCellValueFactory(new PropertyValueFactory<Item,String>("item"));
         tcQty.setCellValueFactory(new PropertyValueFactory<Item, Integer>("qty"));
         tcValue.setCellValueFactory(new PropertyValueFactory<Item,Integer>("value"));
-
     }
     //....................................................................
     //..........Variables.................................................
+
     private int ttl =0;
     private int vanilaQty = 0;
     private int chocolateQty = 0;
@@ -48,7 +48,6 @@ public class PaneController implements Initializable {
     private int rumQty = 0;
 
     //.............................................................................
-
     private void updateTable(Item item){
         ObservableList<Item> items = table.getItems();
         boolean itemExists = false;
@@ -65,6 +64,7 @@ public class PaneController implements Initializable {
         }else{
             items.set(index,item);
         }
+
         table.setItems(items);
 
         ttl = ttl + item.price;
@@ -210,8 +210,61 @@ public class PaneController implements Initializable {
         tfBalance.setText("");
     }
 
+    void setVariables(){
+        ttl= 0;
+        cash = "";
+        balance = 0;
+        tfBalance.setText("");
+        tfCash.setText("");
+        tfTotal.setText("");
+        vanilaQty = 0;
+        chocolateQty = 0;
+        fruitQty = 0;
+        mangoQty = 0;
+        butterQty = 0;
+        veryQty = 0;
+        rockeyQty = 0;
+        creamQtyQty = 0;
+        espressoQty = 0;
+        coconutQty = 0;
+        rumQty = 0;
+    }
+    //.............Pay............................................................
 
+    @FXML void payButton(){
+        setVariables();
+        removeAllButton();
 
+    }
+
+    //..............Remove Items........................................
+    @FXML
+    void removeButton(ActionEvent event){
+        int selectID = table.getSelectionModel().getSelectedIndex();
+        Item item = table.getItems().get(selectID);
+        if(item.getQty() >1) {
+            item.setQty(item.getQty() - 1);
+            item.setValue(item.price*item.getQty());
+            table.getItems().set(selectID,item);
+        }else {
+            table.getItems().remove(selectID);
+        }
+        ttl = ttl-item.price;
+        tfTotal.setText(String.valueOf(ttl));
+    }
+    @FXML
+    void removeAllButton(){
+        int size = table.getItems().size();
+        table.getItems().remove(0,size);
+        setVariables();
+    }
+    //.....................................................................
+    @FXML void cardButton(){
+
+    }
+    @FXML void cashButton(){
+
+    }
 
 }
 
